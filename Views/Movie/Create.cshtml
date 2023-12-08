@@ -1,0 +1,29 @@
+@model Movie
+
+<h1>Crear Pelicula</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Code" class="form-label"></label>
+        <input type="text" class="form-control" asp-for="Code">
+    </div>
+    <div class="form-group">
+        <label asp-for="Name" class="form-label"></label>
+        <input type="text" class="form-control" asp-for="Name">
+    </div>
+    <div class="form-group">
+        <label asp-for="Category" class="form-label"></label>
+        <input type="text" class="form-control" asp-for="Category">
+    </div>
+    <div class="form-group">
+        <label asp-for="Minutes" class="form-label"></label>
+        <input type="text" class="form-control" asp-for="Minutes">
+    </div>
+    <div class="form-group">
+        <label asp-for="Review" class="form-label"></label>
+        <textarea class="form-control" asp-for="Review" cols="5"></textarea>
+    </div>
+
+    <br />
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
